@@ -1,15 +1,20 @@
-<<<<<<< HEAD
 // Computes an approximation of PI.
 public class CalcPi {
-	public static void main(String [] args) { 
-	    // Replace this comment with your code
-	}
+	public static void main(String [] args) 
+	{ 
+		double finalnum = 1;
+		double j = 3;
+	    int n = Integer.parseInt(args[0]);
+		for (int i = 0; i < n; i++) {
+			if (i % 2 == 0) {
+				finalnum = finalnum - (1.0 / j);
+			} else {
+				finalnum = finalnum + (1.0 / j);
+			}
+			j = j + 2;
+		}
+		System.out.println("pi according to Java: " + Math.PI);
+		System.out.println("pi, approximated: " + finalnum * 4);
+		}
 }
-=======
-// Computes an approximation of PI.
-public class CalcPi {
-	public static void main(String [] args) { 
-	    // Replace this comment with your code
-	}
-}
->>>>>>> 13fc53a2705d8c88f3994d4e5d1892bf07f9897a
+
