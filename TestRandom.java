@@ -21,6 +21,8 @@ public  class  TestRandom {
 	else {
 		if (big > small) {
 			System.out.println("Ratio: " + (small / big));
+		}
+		else {
 			System.out.println("Ratio: " + (big / small));
 		}
 	}

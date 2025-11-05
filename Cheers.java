@@ -1,29 +1,25 @@
-<<<<<<< HEAD
-//feedback
 
-/*
-Great work boaz!
-*/
-
-
-// Prints a crowd cheering output.
 public class Cheers {
-        public static void main(String[] args) {
-	    // Replace this comment with your code
+        public static void main(String[] args)
+        {
+	String userInput = args[0];
+        int length = userInput.length();
+        for (int i = 0 ; i < length; i++)
+        {
+                String currentChar = String.valueOf(userInput.charAt(i));
+                if (currentChar.equals("A") || currentChar.equals("E") || currentChar.equals("F") || currentChar.equals("H") || currentChar.equals("I") || currentChar.equals("L") || currentChar.equals("M") || currentChar.equals("N") || currentChar.equals("O") || currentChar.equals("R") || currentChar.equals("S") || currentChar.equals("X"))
+                {
+                        System.out.println("Give me an " + currentChar + ": " + currentChar + "!");
+                }
+                else
+                {
+                        System.out.println("Give me a " + currentChar + ": " + currentChar + "!");
+                }
+        }
+        System.out.println("What does that spell?");
+        for (int i = 0 ; i < length; i++)
+        {
+                System.out.println(userInput + "!!!");
+        }
         }
 }
-=======
-//feedback
-
-/*
-Great work boaz!
-*/
-
-
-// Prints a crowd cheering output.
-public class Cheers {
-        public static void main(String[] args) {
-	    // Replace this comment with your code
-        }
-}
->>>>>>> 13fc53a2705d8c88f3994d4e5d1892bf07f9897a
