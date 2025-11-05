@@ -5,11 +5,11 @@ public class CalcPi {
 		double finalnum = 1;
 		double j = 3;
 	    int n = Integer.parseInt(args[0]);
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i < n; i++) {
 			if (i % 2 == 0) {
-				finalnum = finalnum - (1.0 / j);
-			} else {
 				finalnum = finalnum + (1.0 / j);
+			} else {
+				finalnum = finalnum - (1.0 / j);
 			}
 			j = j + 2;
 		}
